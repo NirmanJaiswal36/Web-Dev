@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Demo Form</h1>
+    <form action="/search/">
+        <p>
+            <label for="username"> Enter your Username:</label>
+            <input type="text" placeholder="Username" id="username" name="username" required>
+        </p>
+        <p>
+            <label for="password">Enter your Password:</label>
+            <input type="password" placeholder="Password" id="password" name="password" minlength="8" maxlength="20" required>
+        </p>
+        <p>
+            <label for="color">Choose your favorite Color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <button type="button">Submit</button>
+        <input type="submit" value="Click">
+    </form>
+
+    <h2>Search Engines</h2>
+
+    <h3>YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Video" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <h3>Zoro.to</h3>
+    <form action="https://zoro.to/search">
+        <input type="text" placeholder="Anime" name="keyword">
+        <button>Search Anime</button>
+    </form>
+
+    <h3>Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Browse" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>Checkbox</h2>
+    <form action="/search">
+        <input type="checkbox" id="agree" name="agreement">
+        <label for="agree">I accept the agreement</label>
+        <button>Submit</button>
+    </form>
+
+    <h2>Select Menu</h2>
+    <form action="/search">
+        <label for="genre">Select your favorite anime genre:</label>
+        <select name="genre" id="genre">
+            <option value="">genre</option>
+            <option value="shounen">Shounen</option>
+            <option value="mecha">Mecha</option>
+            <option value="psychological thriller">Psychological Thriller</option>
+        </select>
+        <button>Submit</button>
+    </form>
+
+    <h2>Radiobuttons</h2>
+    <form action="https://zoro.to/search">
+        <p>Select your Favourite Anime:</p>
+
+        <input type="radio" id="naruto" name="keyword" value="naruto">
+        <label for="naruto">Naruto</label>
+
+        <input type="radio" id="one piece" name="keyword" value="one piece">
+        <label for="one piece">One Piece</label>
+
+        <input type="radio" id="aot" name="keyword" value="attack on titan">
+        <label for="aor">Attack On Titan</label>
+
+        <p><button>Submit</button></p>
+
+    </form>
+
+    <h2>Range</h2>
+    <form action="/search">
+        <p>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="11">
+        </p>
+
+        <p>
+            <label for="bass">Bass</label>
+            <input type="range" id="bass" name="bass" min="20" step="4" max="101">
+        </p>
+
+        <p><button>Submit</button></p>
+    </form>
+
+    <h2>Contact Me</h2>
+    <form action="/contact">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="example@anime.com" required>
+        <br>
+
+        <label for="message">Tell me how you feel about this webpage</label><br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
