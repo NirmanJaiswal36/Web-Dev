@@ -1,0 +1,36 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+h1{
+    height: 50px;
+    width:100px;
+    background-color: aquamarine; 
+}
+
+#one {
+    background-color: blanchedalmond;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box;/* border inside the box*/
+}
+
+
+
+#two {
+    background-color: blanchedalmond;
+    border-color: aqua;
+    border-width: 3px;
+    border-style: inset;
+}
+
+#three {
+    background-color: blanchedalmond;
+    border: 4px solid black;
+    border-radius: 25%;
+    border-style: dashed;
+    border-left-style: dotted;
+}
